@@ -4,6 +4,8 @@
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
 @import 'tools/cover';
+@import 'tools/typo';
+@import '/swiper/swiper-bundle.css';
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
@@ -26,7 +28,16 @@
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
-// C’est là que la majorité de notre travail a lieu.
+@import 'components/icons';
+@import 'components/button';
+@import 'components/section';
+@import 'components/header';
+@import 'components/hero';
+@import 'components/athletes';
+@import 'components/cards';
+@import 'components/gallery';
+@import 'components/footer';
+@import 'components/logo';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   athletes / components
+   ========================================================================== */
+
+.athletes {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__intro {
+        max-width: 60%;
+        text-align: right;
+        margin-bottom: var(--spacing-lg);
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+            text-align: left;
+            margin-bottom: var(--spacing-md);
+        }
+    }
+}

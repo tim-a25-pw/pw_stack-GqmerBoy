@@ -1,0 +1,44 @@
+/* ==========================================================================
+   hero / components
+   ========================================================================== */
+
+.hero {
+    position: relative;
+    .wrapper{
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__media{    
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        img{
+            object-fit: cover;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+        max-width: 50%;
+        color: var(--color-white);
+        span{
+            font-weight: 600;
+        }
+        h1{
+            margin: 0;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+}

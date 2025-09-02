@@ -1,0 +1,25 @@
+/* ==========================================================================
+   footer / components
+   ========================================================================== */
+
+.footer {
+    background-color: var(--color-black);
+    color: white;
+    padding: var(--spacing-md) 0;
+    text-align: center;
+    .logo {
+        color: var(--color-white);
+        justify-content: center;
+        border-bottom: solid 1px var(--color-white);
+        padding: var(--spacing-xs) 0;
+    }
+    nav {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+}

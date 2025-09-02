@@ -6,10 +6,12 @@
     --font-primary: 'Nunito', sans-serif;
     --font-secondary: 'PT Sans', sans-serif;
 
-    --font-size-content: 1.8rem;
+    --font-size-content: #{typo(12px, 18px)};
 
     /// Grosseur des textes
-    --font-size-h1: 10rem;
-    --font-size-h2: 7rem;
-    --font-size-h3: 3.5rem;
+    --font-size-h1: #{typo(67px, 100px)};
+    --font-size-h2: #{typo(33px, 50px)};
+    --font-size-h3: #{typo(26px, 40px)};
+    --font-size-cta: #{typo(11px, 16px)};
+
 }

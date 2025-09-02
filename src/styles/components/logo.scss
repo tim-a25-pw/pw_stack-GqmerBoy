@@ -1,0 +1,21 @@
+/* ==========================================================================
+   logo / components
+   ========================================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-black);
+    .icon {
+        margin-right: var(--spacing-xs);
+        font-size: var(--font-size-h2);
+        fill: var(--color-primary);
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}

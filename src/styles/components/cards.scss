@@ -1,0 +1,44 @@
+/* ==========================================================================
+   cards / components
+   ========================================================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--grid-gap);
+    width: 100%;
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        position: relative;
+        &__media {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            img {
+                object-fit: cover;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__content {
+            display: flex;
+            align-items: flex-end;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+}
