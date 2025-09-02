@@ -20,6 +20,15 @@
             gap: var(--spacing-sm);
             text-decoration: none;
             list-style: none;
+            width: 100%;
+        }
+        .social-icon {
+            background-color: var(--color-light-black);
+            padding: var(--spacing-xs);
+            border-radius: 100%;
+        }
+        .icon {
+            fill: var(--color-white);
         }
     }
 }
