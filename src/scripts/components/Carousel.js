@@ -6,6 +6,7 @@ export default class Carousel {
     this.options = {
       slidesPerView: 1,
       spaceBetween: 0,
+      direction: 'horizontal',
       pagination: {
         el: this.element.querySelector('.swiper-pagination'),
       },
@@ -28,6 +29,10 @@ export default class Carousel {
     // pour permettre le défilement infini des diapositives
     if ('loop' in this.element.dataset) {
       this.options.loop = true;
+    }
+
+    if ('vertical' in this.element.dataset) {
+      this.options.direction = 'vertical';
     }
   }
 
